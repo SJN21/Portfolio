@@ -1,0 +1,240 @@
+*{
+    font-family: 'Kalam', cursive;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    background-color: #fff;
+}
+nav .navbar{
+    display: flex; 
+    flex-direction: column;
+    /* background-color:aquamarine; */
+    justify-content: center;
+    width: 8vw;
+    height: 100%;
+    position: fixed;
+}
+nav .navbar .round{
+    display: flex;
+    width: 46px;
+    height: 46px;
+    border-radius: 200px;
+    margin: 0 0 10px;
+    background-color: #ececec;
+    transform-style: left;
+    transition-duration: 0.7s;
+}
+nav .navbar .round:hover{
+    background-color: #0563BB;
+}
+/* nav .navbar .round .b2{
+    visibility: hidden;
+} */
+
+nav .navbar .round .b2 {
+    margin: 12.5px 0 0 12px;
+    visibility: hidden;
+}
+nav .navbar .round .b1 {
+    margin: 11.5px 0 0 12px;
+    /* visibility: hidden; */
+}
+nav .navbar .round .b1:hover{
+    margin: 12.5px 0 0 12px;
+    visibility: visible;
+}
+nav .navbar .round img{
+    margin: 12.5px 12.5px;
+    width: 21px;
+    height: 21px;
+}
+#active{
+    background-color:#0563BB;
+}
+
+/* home */
+.home{
+    display: flex;
+    background: url("./images/grp05.jpg") no-repeat center;
+    height: 100vh;
+    color: #0563BB;
+    background-attachment: fixed;
+    min-height: 500px;
+}
+.home .home-content{
+    margin: 0 0 0 8vw;
+}
+
+.home .home-content .text{
+    /* margin: 0 0 0 8vw; */
+    position: relative;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-2{ 
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: -3px ;
+    color: #525252;
+    }
+.home .home-content .text-3{ 
+    font-size: 40px;
+    margin: 5px 0;
+    color: #525252;
+    }
+.home .home-content .text-3 #typing{
+    color: #0563BB;
+    font-weight: 500;
+    overflow: hidden;
+}
+section .text-3::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    width: 180px;
+    height: 100%;
+    background: #edefef;
+    transform: translateX(-50%);
+    border-left: 2px solid #0563BB;
+    animation: animate 4s steps(12) infinite;
+ }
+ @keyframes animate{
+    40%,60%{
+        left: 85%;
+    }
+    100%{
+        left: 40%;
+    }
+ }
+ .home .home-content .social {
+    display: flex;
+ }
+ 
+ .home .home-content .social img{
+    width: 24px;
+    margin: 2vh 2vw 2vh 0;
+ }
+
+ /* about */
+ .about .head,
+ .skills .head,
+ .portfolio .head { 
+    font-size: 30px;
+    font-weight: 700;
+    /* margin-left: -3px ; */
+    color: #303030;
+}
+.about .upper{
+    text-align: center;
+    margin: 8vh 0 0 8vw;
+    padding: 0 3vw;
+}
+.about .more{
+    display: flex;
+    margin: 8vh 0 0 8vw;
+    padding: 0 3vw;
+    justify-content: center;
+}
+.about .more .img img{
+    width: 300px;
+}
+.about .more .right{
+    margin: 0 0 0 3vw;
+}
+.about .more .right p{
+    font-size: 24px;
+    font-weight: 700;
+    color: #525252;   
+}
+.about .more .right .points{
+    margin: 12px 0 0;
+    display: flex;
+}
+.about .more .right .points .rleft ul li{
+    margin: 12px 0 0;
+}
+.about .more .right .points .rright ul li{
+    margin: 12px 0 0 40px;
+}
+
+/* skills */
+.skills .upper{
+    text-align: center;
+    margin: 10vh 0 0 8vw;
+    padding: 0 3vw;
+}
+.skills .content{
+    display:flex;
+    font-weight: 600;
+}
+.skills .content .left{
+    margin: 12px 0 0 8vw;
+    padding: 0 3vw;
+}
+.skills .content .rect{
+    width: 460px; 
+    background-color: rgb(148, 148, 148); 
+    height: 10px;
+    margin: 5px 0 20px 0;
+}
+.skills .content .left .rect #myhtml{
+    width: 450px; 
+    background-color: #0563BB; 
+    height: 10px;
+}
+.skills .content .left .rect #mycss{
+    width: 315px; 
+    background-color: #0563BB; 
+    height: 10px;
+}
+.skills .content .left .rect #myjs{
+    width: 225px; 
+    background-color: #0563BB; 
+    height: 10px;
+}
+.skills .content .right{
+    margin: 12px 0 0 3vw;
+}
+
+/* portfolio */
+.portfolio .upper{
+    text-align: center;
+    margin: 10vh 0 0 8vw;
+    padding: 0 3vw;
+}
+.portfolio .menulist ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 5vh 3vw 0 8vw;
+}
+.portfolio .menulist ul li{
+    margin: 0 25px 0 0;
+    cursor: pointer;
+}
+.portfolio .menulist ul .active{
+    color: #0563BB;
+    font-weight: 600;
+}
+.portfolio .images{
+    display: flex;
+    margin: 5vh 3vw 0 11vw;
+}
+.portfolio .images .left{
+    margin: 0 3vw 0 0 ;
+}
+.portfolio .images .middle{
+    margin: 0 3vw 0 0;
+}
+.portfolio .images .middle img{
+}
+.portfolio .images .right img{
+    width: 80%;
+}
