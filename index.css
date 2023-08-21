@@ -56,6 +56,12 @@ nav .navbar .round img{
 #active{
     background-color:#0563BB;
 }
+#active:hover{
+    width: 130px;
+    animation: left;
+    margin-right: -100px;
+    /* background-color:#0563BB; */
+}
 
 /* home */
 .home{
@@ -199,6 +205,16 @@ section .text-3::before{
     background-color: #0563BB; 
     height: 10px;
 }
+.skills .content .right .rect #myfigma{
+    width: 400px; 
+    background-color: #0563BB; 
+    height: 10px;
+}
+.skills .content .right .rect #myui{
+    width: 400px; 
+    background-color: #0563BB; 
+    height: 10px;
+}
 .skills .content .right{
     margin: 12px 0 0 3vw;
 }
@@ -226,6 +242,9 @@ section .text-3::before{
 .portfolio .images{
     display: flex;
     margin: 5vh 3vw 0 11vw;
+}
+.portfolio .images  a img{
+    margin: 0 0 4vh 0 ;
 }
 .portfolio .images .left{
     margin: 0 3vw 0 0 ;
